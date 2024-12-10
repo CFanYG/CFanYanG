@@ -1,0 +1,80 @@
+*{padding: 0;margin: 0;}
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/illbed.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.headimg{
+    height: 20rem;
+    width: 20rem;
+    margin: 10% 40%;
+    background-color: aliceblue;
+    border-radius: 50%;
+    background-image: url(/images/lblecy.png);
+    transition: transform 0.5s ease;
+    border: 2px solid;
+}
+.headimg:hover{background-image: url(/images/0haoji.png);transform: scale(1.2);}
+#biaoti{
+    font-family:"HFSM";
+    font-size: 4rem;
+    position: relative;
+    top: 20rem;
+    left: 1rem;
+    text-decoration: none;
+    color: skyblue;
+}
+@font-face {
+    font-family: HFSM;
+    src: url(/font/HFSantaMonica-2.ttf);
+}
+.daohanglan{
+    height: 4rem;
+    width: 100%;
+    opacity: 0.6;
+    position: relative;
+    
+}
+h1.daohanglan a {
+    color: gray; /* 示例：将链接颜色设为蓝色 */
+    text-decoration: none; /* 移除下划线 */
+}
+.daohang{
+    float: right;
+    border: 2px solid;
+    margin: 2px;
+}
+.cfy{
+    font-size: 3rem;
+    font-family: "CR";
+    text-decoration: none;
+}
+h2 {
+    /* 本例12个文字(加标点符号)；有多少个文字，width就是多少个em */
+    width: 12em;
+    /* 加上两个动画，一个是打字动画，使用steps让字一个一个的出现，
+     注意step和字数保持一致，光标动画也是同理，*/
+    animation: typingWords 4s steps(12) infinite, cursor 0.5s steps(1) infinite;
+    /* 要设置不允许换行，且溢出隐藏 */
+    white-space: nowrap;
+    overflow: hidden;
+    /* 使用右边框作为打印的指针光标 */
+    border-right: 1px solid #000;
+    font-size: 5rem;
+    margin: 1% 21%;
+    color: skyblue;
+    font-family: ZHJ;
+}
+
+h2:hover {
+    animation: flowCss 4s infinite linear;
+}
+@keyframes typingWords {
+    0% {
+        width: 0;
+    }
+}
+
+
